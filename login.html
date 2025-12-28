@@ -1,0 +1,94 @@
+<html>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> LogIn </title>
+<style>
+    Body {
+        font-family: Calibri, Helvetica, sans-serif; 
+        background-color:  #e1dbd6;
+    }
+    h1 {
+        color: black;
+    }
+    button {
+        background-color: #e2e2e2;
+        width: 100%;
+        color: black;
+        padding: 15px;
+        margin: 10px 0px;
+        border: 3px solid #080000;
+        cursor: pointer;
+        border-radius: 27px;
+        text-transform: uppercase;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-property: box-shadow, transform;
+                transition-property: box-shadow, transform;
+                font-family: Calibri, Helvetica, sans-serif; 
+                font-weight: bold;
+        }
+    form {
+        border: 3px solid #f7f7f7;
+        }
+    label {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    input[type=email], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 3px solid #080000;
+        box-sizing: border-box;
+        border-radius: 27px;
+        }
+    button:hover, .button:focus, .button:active{
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                -webkit-trasform: scale(1,1);
+                transform: scale(1,1);
+                opacity: 80%;
+            } 
+    .container { 
+            padding: 25px; 
+            background-color: #d1d1d1;
+            border: 3px solid #080000;
+            border-radius: 27px;
+            width: 90%;
+            max-width: 700px;
+            text-align: left;
+        } 
+    </style>
+	</head>
+	<body>
+		<section>
+			<font size="+2"> <center> <h1>Please Provide The Information Below:</h1> </center> </font>
+			<center> <div class="container">
+				<b> <label>Username:</label> </b>
+					<input type="email" placeholder="Hint: 12345" id="username">
+				<b> <label>Password:</label> </b>
+					<input type="password" placeholder="Hint: 12345" id="password">
+			<button class"login-btn" onclick="func()"
+			>
+				SUBMIT!
+			</button>
+        </div> </center>
+			
+		</section>
+	<script>
+		function func(){
+			var email = document.getElementById("username").value;
+			var pass = document.getElementById("password").value;
+			if (email == "12345" && pass == "12345"){
+                alert("Ang Galing Mo Naman Buddy")
+				window.location.assign("homepage.html")
+			}
+			else{
+				alert("Try Again")
+			}
+		}
+	</script>
+	</body>
+</html>

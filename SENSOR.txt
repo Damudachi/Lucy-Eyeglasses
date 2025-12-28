@@ -1,0 +1,9 @@
+SENSOR
+gnd - gnd = red+yellow
+echo - pin11 = black+orange
+trig - pin12 = orange+yellow
+vcc - 5v = brown+orange
+
+LED - pin13
+Neg - Gnd = yellow + yellow
+Pos - Resistor - 3.3 v = green+orange
